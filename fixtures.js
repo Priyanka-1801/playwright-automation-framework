@@ -1,3 +1,4 @@
+   // Custom fixtures for the login flow
 const base = require('@playwright/test');
 
 exports.test = base.test.extend({
