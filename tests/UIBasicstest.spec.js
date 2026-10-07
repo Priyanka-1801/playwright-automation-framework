@@ -10,7 +10,7 @@ test('understand destructuring', async () => {
 
 // Test 2: Basic navigation - just opening a page
 test('my first test', async ({ page }) => {
-  await page.goto('https://the-internet.herokuapp.com/login');
+  await page.goto('https://the-internet.herokuapp.com/login', { waitUntil: 'domcontentloaded' });
 });
 
 // Login-related tests, grouped together with shared setup
